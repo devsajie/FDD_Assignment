@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>48-Hour Event Timetable | APUHACKERX2026 // APU × LBEF STUDENT HACKATHON</title>
+    <meta name="description" content="Explore the complete hour-by-hour schedule for APUHACKERX2026 with interactive day, category, and keyword filters.">
+    <meta name="author" content="LBEF & APU Student Organizing Committee">
+    <meta name="keywords" content="Hackathon Nepal, LBEF Campus, Asia Pacific University, Kathmandu Tech, Student Innovation, Coding Competition">
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:title" content="48-Hour Event Timetable | APUHACKERX2026">
+    <meta property="og:description" content="Explore the complete hour-by-hour schedule for APUHACKERX2026 with interactive day, category, and keyword filters.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+        <!-- Google Fonts: Sora (Headings) + Inter (Body) + IBM Plex Mono (Technical Labels) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Site CSS Layers -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- EmailJS SDK (for client-side form submissions) -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        // EmailJS Initialization Boilerplate
+        // Replace with your real public key in production:
+        // window.EMAILJS_PUBLIC_KEY = "YOUR_EMAILJS_PUBLIC_KEY";
+        // emailjs.init(window.EMAILJS_PUBLIC_KEY);
+    </script>
+</head>
+<body id="top" data-page="schedule">
+    
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
+
+    <!-- Top Announcement Ticker -->
+    <aside class="announcement-bar" aria-label="Event Notice">
+        <div class="announcement-ticker">
+            <span class="ticker-tag">LIVE REGISTRATION</span>
+            <span class="ticker-text">APUHACKERX2026 // Registration open till Nov 20 · 48H Hackathon begins Nov 30 at LBEF Campus, Maitidevi, Kathmandu · APU × LBEF Student Collaboration · Over NPR 350,000 in Prizes & Cloud Credits!</span>
+        </div>
+        <div class="announcement-meta">
+            <span class="status-indicator"><span class="status-beacon"></span> REGISTRATIONS ACTIVE</span>
+            <span class="event-coords">27.7058° N, 85.3331° E · KATHMANDU</span>
+        </div>
+    </aside>
+
+    <!-- Global Header & Navigation -->
+    <header class="site-header" id="site-header">
+        <div class="header-container">
+            <a href="index.html" class="brand-logo" aria-label="APUHACKERX2026 Home">
+                <span class="logo-mark">APUHACKER<span class="logo-x">X</span><span class="logo-year">2026</span></span>
+                <span class="logo-sub">APU × LBEF STUDENT HACKATHON</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+<li><a href="about.html" class="nav-link">About</a></li>
+<li><a href="activities.html" class="nav-link">Tracks & Rules</a></li>
+<li><a href="schedule.html" aria-current="page" class="nav-link active">Schedule</a></li>
+<li><a href="resources.html" class="nav-link">Resources</a></li>
+<li><a href="gallery.html" class="nav-link">Gallery</a></li>
+<li><a href="news.html" class="nav-link">News</a></li>
+<li><a href="faq.html" class="nav-link">FAQ</a></li>
+<li><a href="sponsors.html" class="nav-link">Sponsors</a></li>
+<li><a href="contact.html" class="nav-link">Contact</a></li>
+<li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="registration.html" class="btn btn-primary btn-sm register-btn">
+                    <span>Register Team →</span>
+                </a>
+                
+                <!-- Mobile Navigation Toggle -->
+                <button type="button" class="mobile-nav-toggle" id="menu-toggle-btn" aria-controls="mobile-drawer" aria-expanded="false" aria-label="Toggle navigation menu">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+            <div class="mobile-drawer-inner">
+                <div class="mobile-drawer-header">
+                    <span class="drawer-title">APUHACKER<span style="color:var(--color-secondary);">X</span>2026</span>
+                    <button type="button" class="drawer-close" id="menu-close-btn" aria-label="Close navigation menu">✕</button>
+                </div>
+                <nav class="mobile-nav" aria-label="Mobile Navigation">
+                    <ul class="mobile-nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+<li><a href="about.html" class="nav-link">About</a></li>
+<li><a href="activities.html" class="nav-link">Tracks & Rules</a></li>
+<li><a href="schedule.html" aria-current="page" class="nav-link active">Schedule</a></li>
+<li><a href="resources.html" class="nav-link">Resources</a></li>
+<li><a href="gallery.html" class="nav-link">Gallery</a></li>
+<li><a href="news.html" class="nav-link">News</a></li>
+<li><a href="faq.html" class="nav-link">FAQ</a></li>
+<li><a href="sponsors.html" class="nav-link">Sponsors</a></li>
+<li><a href="contact.html" class="nav-link">Contact</a></li>
+<li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+
+                    </ul>
+                </nav>
+                <div class="mobile-drawer-footer">
+                    <a href="registration.html" class="btn btn-primary btn-block">Register Team Now →</a>
+                    <p class="drawer-location">LBEF Campus, Maitidevi, Kathmandu, Nepal</p>
+                </div>
+            </div>
+        </div>
+        <div class="drawer-backdrop" id="drawer-backdrop"></div>
+    </header>
+
+
+    <main id="main-content" class="main-wrapper">
+        
+<section class="section section-white">
+    <div class="container">
+        <div style="max-width: 780px;">
+            <span class="section-meta-tag">CHRONOLOGY</span>
+            <h1 style="font-size: clamp(2.25rem, 4.5vw, 3.75rem); margin-bottom: 1rem;">
+                48-Hour Event Timetable
+            </h1>
+            <p style="font-size: 1.15rem; color: var(--color-text-muted);">
+                A non-stop 48-hour protocol engineered to balance intensive code development with high-value technical workshops, mentor check-ins, and mandatory recharge sessions.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <!-- Interactive Controls -->
+        <div class="schedule-control-bar">
+            <div class="day-tab-group" role="tablist" aria-label="Schedule Days">
+                <button type="button" class="day-tab-btn active" data-day="day-1" role="tab" aria-selected="true">DAY 1 // MON NOV 30</button>
+                <button type="button" class="day-tab-btn" data-day="day-2" role="tab" aria-selected="false">DAY 2 // TUE DEC 01</button>
+                <button type="button" class="day-tab-btn" data-day="day-3" role="tab" aria-selected="false">DAY 3 // WED DEC 02</button>
+            </div>
+
+            <div class="schedule-filter-search">
+                <input type="text" id="schedule-search" class="schedule-input" placeholder="Search sessions, speakers, or rooms..." aria-label="Search schedule">
+            </div>
+        </div>
+
+        <!-- Category Pills -->
+        <div class="schedule-category-pills" role="group" aria-label="Filter by session category">
+            <button type="button" class="category-pill active" data-category="all">All Events</button>
+            <button type="button" class="category-pill" data-category="keynote">Keynotes</button>
+            <button type="button" class="category-pill" data-category="hacking">Hacking</button>
+            <button type="button" class="category-pill" data-category="workshop">Workshops</button>
+            <button type="button" class="category-pill" data-category="mentorship">Mentorship</button>
+            <button type="button" class="category-pill" data-category="food">Recharge & Food</button>
+            <button type="button" class="category-pill" data-category="pitch">Pitches & Jury</button>
+        </div>
+
+        <!-- Schedule Timetable Hybrid -->
+        <div class="schedule-table-wrap">
+            <!-- Day 1 Events -->
+            <div class="schedule-row featured-event" data-day="day-1" data-category="keynote">
+                <div class="schedule-time">14:00 – 15:30</div>
+                <div class="schedule-details">
+                    <h4>Participant Check-In & Hardware Kit Handout</h4>
+                    <p>Badge distribution, network credentials provisioning, swag pickup, and hardware deposit verification.</p>
+                </div>
+                <div class="schedule-location">LBEF Main Courtyard</div>
+                <div class="schedule-tag-badge"><span class="badge">Check-In</span></div>
+            </div>
+
+            <div class="schedule-row" data-day="day-1" data-category="keynote">
+                <div class="schedule-time">16:00 – 17:00</div>
+                <div class="schedule-details">
+                    <h4>Opening Ceremony & Problem Statement Unveiling</h4>
+                    <p>Keynotes from LBEF Academic Dean & APU Computing Faculty. Detailed challenge brief release.</p>
+                </div>
+                <div class="schedule-location">Auditorium Hall A</div>
+                <div class="schedule-tag-badge"><span class="badge badge-primary">Keynote</span></div>
+            </div>
+
+            <div class="schedule-row featured-event" data-day="day-1" data-category="hacking">
+                <div class="schedule-time">17:00 SHARP</div>
+                <div class="schedule-details">
+                    <h4>Hacking Commences (Timer Initiated)</h4>
+                    <p>Git repositories initialized. Teams claim dedicated lab benches in Turing & Lovelace Labs.</p>
+                </div>
+                <div class="schedule-location">All Lab Floors</div>
+                <div class="schedule-tag-badge"><span class="badge badge-secondary">Hacking</span></div>
+            </div>
+
+            <div class="schedule-row" data-day="day-1" data-category="workshop">
+                <div class="schedule-time">18:30 – 19:30</div>
+                <div class="schedule-details">
+                    <h4>Workshop: Edge AI for Nepali NLP & Low-Resource Models</h4>
+                    <p>Live tutorial on fine-tuning quantized language models with Er. Sandeep Karki (APU Alumni).</p>
+                </div>
+                <div class="schedule-location">Seminar Room 201</div>
+                <div class="schedule-tag-badge"><span class="badge">Workshop</span></div>
+            </div>
+
+            <div class="schedule-row" data-day="day-1" data-category="food">
+                <div class="schedule-time">20:30 – 21:30</div>
+                <div class="schedule-details">
+                    <h4>Dinner: Traditional Thakali & Continental Options</h4>
+                    <p>Nutritious warm dinner served on the rooftop terrace. Vegan and vegetarian options guaranteed.</p>
+                </div>
+                <div class="schedule-location">Cafeteria</div>
+                <div class="schedule-tag-badge"><span class="badge">Food</span></div>
+            </div>
+
+            <div class="schedule-row" data-day="day-1" data-category="mentorship">
+                <div class="schedule-time">23:00 – 01:00</div>
+                <div class="schedule-details">
+                    <h4>Mentor Circuit I: Architecture & Scope Validation</h4>
+                    <p>First round of mandatory check-ins. Senior architects review database schemas and API boundaries.</p>
+                </div>
+                <div class="schedule-location">Team Benches</div>
+                <div class="schedule-tag-badge"><span class="badge">Mentorship</span></div>
+            </div>
+
+            <!-- Day 2 Events -->
+            <div class="schedule-row" data-day="day-2" data-category="food">
+                <div class="schedule-time">08:00 – 09:30</div>
+                <div class="schedule-details">
+                    <h4>Breakfast & Barista Station</h4>
+                    <p>Fresh bakery, eggs, seasonal fruits, organic Ilami tea, and freshly brewed Himalayan coffee.</p>
+                </div>
+                <div class="schedule-location">Cafeteria</div>
+                <div class="schedule-tag-badge"><span class="badge">Food</span></div>
+            </div>
+
+            <div class="schedule-row" data-day="day-2" data-category="workshop">
+                <div class="schedule-time">11:00 – 12:00</div>
+                <div class="schedule-details">
+                    <h4>Masterclass: Scalable Serverless & Microservice Fault Tolerance</h4>
+                    <p>Architecting resilient backends under high concurrency with senior cloud engineers from Leapfrog.</p>
+                </div>
+                <div class="schedule-location">Seminar Hall 201</div>
+                <div class="schedule-tag-badge"><span class="badge">Workshop</span></div>
+            </div>
+
+            <div class="schedule-row" data-day="day-2" data-category="mentorship">
+                <div class="schedule-time">15:00 – 17:00</div>
+                <div class="schedule-details">
+                    <h4>Mentor Circuit II: Mid-Point Code Review & UI/UX Audit</h4>
+                    <p>Designers from APU Creative Lab evaluate visual hierarchy, accessibility, and user flows.</p>
+                </div>
+                <div class="schedule-location">Team Benches</div>
+                <div class="schedule-tag-badge"><span class="badge">Mentorship</span></div>
+            </div>
+
+            <div class="schedule-row featured-event" data-day="day-2" data-category="food">
+                <div class="schedule-time">23:30 – 00:30</div>
+                <div class="schedule-details">
+                    <h4>Midnight Fuel: Steaming Momos & Energy Boost</h4>
+                    <p>Midnight snack break, casual gaming lounge, and acoustic chill session to refresh tired brains.</p>
+                </div>
+                <div class="schedule-location">Student Commons</div>
+                <div class="schedule-tag-badge"><span class="badge">Food</span></div>
+            </div>
+
+            <!-- Day 3 Events -->
+            <div class="schedule-row" data-day="day-3" data-category="food">
+                <div class="schedule-time">07:30 – 08:30</div>
+                <div class="schedule-details">
+                    <h4>Final Day Power Breakfast</h4>
+                    <p>Warm oatmeal, croissants, black coffee, and fruit smoothies.</p>
+                </div>
+                <div class="schedule-location">Cafeteria</div>
+                <div class="schedule-tag-badge"><span class="badge">Food</span></div>
+            </div>
+
+            <div class="schedule-row" data-day="day-3" data-category="mentorship">
+                <div class="schedule-time">09:00 – 10:30</div>
+                <div class="schedule-details">
+                    <h4>Pitch Dry Runs & Slide Deck Polishing</h4>
+                    <p>Practice your 3-minute pitch with communication coaches and refine your live demo scripts.</p>
+                </div>
+                <div class="schedule-location">Auditorium Hall B</div>
+                <div class="schedule-tag-badge"><span class="badge">Mentorship</span></div>
+            </div>
+
+            <div class="schedule-row featured-event" data-day="day-3" data-category="hacking">
+                <div class="schedule-time">12:00 SHARP</div>
+                <div class="schedule-details">
+                    <h4>HARD CODE FREEZE & Repository Lock</h4>
+                    <p>Submissions close on the portal. No further commits allowed. Final deployment URLs validated.</p>
+                </div>
+                <div class="schedule-location">Central Server</div>
+                <div class="schedule-tag-badge"><span class="badge badge-primary">Deadline</span></div>
+            </div>
+
+            <div class="schedule-row featured-event" data-day="day-3" data-category="pitch">
+                <div class="schedule-time">13:30 – 16:30</div>
+                <div class="schedule-details">
+                    <h4>Grand Pitch Stage & Live Jury Demonstration</h4>
+                    <p>Top 12 shortlisted teams present on the main stage: 3-min pitch + 2-min Q&A before our 6-member jury.</p>
+                </div>
+                <div class="schedule-location">Auditorium Hall A</div>
+                <div class="schedule-tag-badge"><span class="badge badge-secondary">Pitching</span></div>
+            </div>
+
+            <div class="schedule-row" data-day="day-3" data-category="keynote">
+                <div class="schedule-time">17:00 – 18:30</div>
+                <div class="schedule-details">
+                    <h4>Awards Ceremony & Closing Reception</h4>
+                    <p>Trophy presentations, track prize distribution, NPR 350K grant announcements, and networking banquet.</p>
+                </div>
+                <div class="schedule-location">Auditorium Hall A</div>
+                <div class="schedule-tag-badge"><span class="badge badge-primary">Awards</span></div>
+            </div>
+        </div>
+
+        <div id="schedule-empty-state" style="display: none; padding: 3rem; text-align: center; background: var(--color-surface); border: 1px solid var(--color-border); margin-top: 1rem;">
+            <p style="font-family: var(--font-mono); color: var(--color-text-muted);">No schedule events match your active filters or search terms.</p>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    
+    <!-- Global Footer -->
+    <footer class="site-footer">
+        <div class="footer-top-strip">
+            <div class="container footer-strip-inner">
+                <div class="strip-item">
+                    <span class="strip-label">ORGANIZED BY:</span>
+                    <span class="strip-val">Lord Buddha Education Foundation (LBEF) & Asia Pacific University (APU)</span>
+                </div>
+                <div class="strip-item">
+                    <span class="strip-label">VENUE:</span>
+                    <span class="strip-val">LBEF Campus, Maitidevi Marg, Kathmandu 44600, Nepal</span>
+                </div>
+                <div class="strip-item">
+                    <span class="strip-label">REGISTRATION DEADLINE:</span>
+                    <span class="strip-val">November 20, 2026 (23:59 NPT)</span>
+                </div>
+                <div class="strip-item">
+                    <span class="strip-label">HACKATHON DATES:</span>
+                    <span class="strip-val">November 30 – December 2, 2026 // 48 Hours On-Campus</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-main-content">
+            <div class="footer-grid">
+                <div class="footer-col col-brand">
+                    <div class="footer-logo">
+                        <span class="footer-logo-title">APUHACKER<span class="title-x">X</span>2026</span>
+                        <span class="footer-tagline">BUILD. BREAK. REPEAT.</span>
+                        <span class="footer-sub-tagline">48 HOURS OF IDEAS, CODE &amp; REAL-WORLD PROBLEMS.</span>
+                    </div>
+                    <p class="footer-desc">
+                        A collaborative student innovation sprint uniting bright minds from Kathmandu to Kuala Lumpur. Exploring AI, urban sustainability, decentralized systems, and inclusive healthtech for emerging markets.
+                    </p>
+                    <div class="footer-badges">
+                        <span class="badge">APU MALAYSIA</span>
+                        <span class="badge">LBEF KATHMANDU</span>
+                        <span class="badge">STUDENT INITIATIVE</span>
+                    </div>
+                </div>
+
+                <div class="footer-col col-links">
+                    <h4 class="footer-heading">NAVIGATION</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About & Committee</a></li>
+                        <li><a href="activities.html">Tracks & Rules</a></li>
+                        <li><a href="schedule.html">48H Timetable</a></li>
+                        <li><a href="registration.html">Team Registration</a></li>
+                        <li><a href="dashboard.html">Participant Dashboard</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col col-links">
+                    <h4 class="footer-heading">ESSENTIALS</h4>
+                    <ul class="footer-links">
+                        <li><a href="resources.html">Starter Kits & Guides</a></li>
+                        <li><a href="gallery.html">Event Gallery & Video</a></li>
+                        <li><a href="news.html">News & Announcements</a></li>
+                        <li><a href="faq.html">Frequently Asked Questions</a></li>
+                        <li><a href="sponsors.html">Sponsors & Partners</a></li>
+                        <li><a href="contact.html">Venue & Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col col-contact">
+                    <h4 class="footer-heading">COMMUNICATION</h4>
+                    <p class="footer-info-text">Have inquiries about teams, mentorship, or campus access?</p>
+                    <div class="contact-pill-list">
+                        <a href="mailto:apuhackerx2026@lbef.edu.np" class="contact-pill">
+                            <span class="pill-type">EMAIL</span>
+                            <span class="pill-val">apuhackerx2026@lbef.edu.np</span>
+                        </a>
+                        <a href="tel:+97714444435" class="contact-pill">
+                            <span class="pill-type">HELPLINE</span>
+                            <span class="pill-val">+977 1-4444435 / Ext 204</span>
+                        </a>
+                    </div>
+                    <div class="social-links-row">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">GH</a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">IN</a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">IG</a>
+                        <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Discord">DC</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>© 2026 APUHACKERX2026 Student Organizing Committee. All rights reserved.</p>
+                    <p class="academic-disclaimer">
+                        <strong>Academic Project Notice:</strong> This website is an authentic student-built project created strictly for the university module <strong>CT053-3-1 Fundamentals of Web Design and Development (FDD) Group Assignment</strong>.
+                    </p>
+                </div>
+                <div class="footer-bottom-right">
+                    <a href="resources.html#conduct">Code of Conduct</a>
+                    <span class="dot-sep">·</span>
+                    <a href="faq.html">Student Eligibility</a>
+                    <span class="dot-sep">·</span>
+                    <a href="#top" class="back-to-top-text" id="back-to-top-link">Back to Top ↑</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Back to Top Button -->
+    <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Scroll back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+
+    <!-- Shared Core Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/schedule.js"></script>
+</body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Official Team Registration | APUHACKERX2026 // APU × LBEF STUDENT HACKATHON</title>
+    <meta name="description" content="Register your student team for APUHACKERX2026. Real-time client-side validation and EmailJS integration.">
+    <meta name="author" content="LBEF & APU Student Organizing Committee">
+    <meta name="keywords" content="Hackathon Nepal, LBEF Campus, Asia Pacific University, Kathmandu Tech, Student Innovation, Coding Competition">
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:title" content="Official Team Registration | APUHACKERX2026">
+    <meta property="og:description" content="Register your student team for APUHACKERX2026. Real-time client-side validation and EmailJS integration.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+        <!-- Google Fonts: Sora (Headings) + Inter (Body) + IBM Plex Mono (Technical Labels) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Site CSS Layers -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- EmailJS SDK (for client-side form submissions) -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        // EmailJS Initialization Boilerplate
+        // Replace with your real public key in production:
+        // window.EMAILJS_PUBLIC_KEY = "YOUR_EMAILJS_PUBLIC_KEY";
+        // emailjs.init(window.EMAILJS_PUBLIC_KEY);
+    </script>
+</head>
+<body id="top" data-page="registration">
+    
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
+
+    <!-- Top Announcement Ticker -->
+    <aside class="announcement-bar" aria-label="Event Notice">
+        <div class="announcement-ticker">
+            <span class="ticker-tag">LIVE REGISTRATION</span>
+            <span class="ticker-text">APUHACKERX2026 // Registration open till Nov 20 · 48H Hackathon begins Nov 30 at LBEF Campus, Maitidevi, Kathmandu · APU × LBEF Student Collaboration · Over NPR 350,000 in Prizes & Cloud Credits!</span>
+        </div>
+        <div class="announcement-meta">
+            <span class="status-indicator"><span class="status-beacon"></span> REGISTRATIONS ACTIVE</span>
+            <span class="event-coords">27.7058° N, 85.3331° E · KATHMANDU</span>
+        </div>
+    </aside>
+
+    <!-- Global Header & Navigation -->
+    <header class="site-header" id="site-header">
+        <div class="header-container">
+            <a href="index.html" class="brand-logo" aria-label="APUHACKERX2026 Home">
+                <span class="logo-mark">APUHACKER<span class="logo-x">X</span><span class="logo-year">2026</span></span>
+                <span class="logo-sub">APU × LBEF STUDENT HACKATHON</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+<li><a href="about.html" class="nav-link">About</a></li>
+<li><a href="activities.html" class="nav-link">Tracks & Rules</a></li>
+<li><a href="schedule.html" class="nav-link">Schedule</a></li>
+<li><a href="resources.html" class="nav-link">Resources</a></li>
+<li><a href="gallery.html" class="nav-link">Gallery</a></li>
+<li><a href="news.html" class="nav-link">News</a></li>
+<li><a href="faq.html" class="nav-link">FAQ</a></li>
+<li><a href="sponsors.html" class="nav-link">Sponsors</a></li>
+<li><a href="contact.html" class="nav-link">Contact</a></li>
+<li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="registration.html" class="btn btn-primary btn-sm register-btn">
+                    <span>Register Team →</span>
+                </a>
+                
+                <!-- Mobile Navigation Toggle -->
+                <button type="button" class="mobile-nav-toggle" id="menu-toggle-btn" aria-controls="mobile-drawer" aria-expanded="false" aria-label="Toggle navigation menu">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+            <div class="mobile-drawer-inner">
+                <div class="mobile-drawer-header">
+                    <span class="drawer-title">APUHACKER<span style="color:var(--color-secondary);">X</span>2026</span>
+                    <button type="button" class="drawer-close" id="menu-close-btn" aria-label="Close navigation menu">✕</button>
+                </div>
+                <nav class="mobile-nav" aria-label="Mobile Navigation">
+                    <ul class="mobile-nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+<li><a href="about.html" class="nav-link">About</a></li>
+<li><a href="activities.html" class="nav-link">Tracks & Rules</a></li>
+<li><a href="schedule.html" class="nav-link">Schedule</a></li>
+<li><a href="resources.html" class="nav-link">Resources</a></li>
+<li><a href="gallery.html" class="nav-link">Gallery</a></li>
+<li><a href="news.html" class="nav-link">News</a></li>
+<li><a href="faq.html" class="nav-link">FAQ</a></li>
+<li><a href="sponsors.html" class="nav-link">Sponsors</a></li>
+<li><a href="contact.html" class="nav-link">Contact</a></li>
+<li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+
+                    </ul>
+                </nav>
+                <div class="mobile-drawer-footer">
+                    <a href="registration.html" class="btn btn-primary btn-block">Register Team Now →</a>
+                    <p class="drawer-location">LBEF Campus, Maitidevi, Kathmandu, Nepal</p>
+                </div>
+            </div>
+        </div>
+        <div class="drawer-backdrop" id="drawer-backdrop"></div>
+    </header>
+
+
+    <main id="main-content" class="main-wrapper">
+        
+<section class="section section-white">
+    <div class="container container-narrow">
+        <span class="section-meta-tag">ADMISSIONS</span>
+        <h1 style="font-size: clamp(2.25rem, 4.5vw, 3.5rem); margin-bottom: 1rem;">
+            Official Team Registration
+        </h1>
+        <p style="font-size: 1.15rem; color: var(--color-text-muted); margin-bottom: 2rem;">
+            Join 50 elite student teams at LBEF Campus Kathmandu. Registrations are open until <strong>November 20, 2026 (23:59 NPT)</strong>. The 48-hour hackathon commences on <strong>November 30, 2026</strong>. Free admission for accepted student cohorts.
+        </p>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container container-narrow">
+        <div class="form-shell">
+            <!-- Form Status / Response Alert -->
+            <div id="registration-status" class="form-status-alert" role="alert"></div>
+
+            <form id="registration-form" novalidate>
+                <!-- Section 1: Team Leader Profile -->
+                <div style="margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--color-border);">
+                    <h3 style="margin-bottom: 0.25rem;">01 — YOUR DETAILS (LEADER & CONTACT)</h3>
+                    <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 1.5rem;">All communication and badge confirmations will be routed to this person.</p>
+
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label for="leader-name" class="form-label">Full Legal Name <span class="req">*</span></label>
+                            <input type="text" id="leader-name" name="leader_name" class="form-control" placeholder="e.g. Aarav Shrestha" required>
+                            <span class="field-error-msg" id="leader-name-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="student-id" class="form-label">Student ID / Roll Number <span class="req">*</span></label>
+                            <input type="text" id="student-id" name="student_id" class="form-control" placeholder="e.g. NP01CP4S24001 or TP012345" required>
+                            <span class="field-error-msg" id="student-id-error"></span>
+                            <span class="form-hint">Used to verify enrollment status at LBEF or APU.</span>
+                        </div>
+                    </div>
+
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label for="leader-email" class="form-label">University / Personal Email <span class="req">*</span></label>
+                            <input type="email" id="leader-email" name="leader_email" class="form-control" placeholder="aarav.s@lbef.edu.np" required>
+                            <span class="field-error-msg" id="leader-email-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="leader-phone" class="form-label">Contact Phone / WhatsApp <span class="req">*</span></label>
+                            <input type="tel" id="leader-phone" name="leader_phone" class="form-control" placeholder="+977 9801234567" required>
+                            <span class="field-error-msg" id="leader-phone-error"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label for="institution" class="form-label">Academic Institution <span class="req">*</span></label>
+                            <select id="institution" name="institution" class="form-control" required>
+                                <option value="">-- Select Institution --</option>
+                                <option value="LBEF Campus, Kathmandu">Lord Buddha Education Foundation (LBEF), Nepal</option>
+                                <option value="APU, Malaysia">Asia Pacific University of Technology & Innovation (APU), Malaysia</option>
+                                <option value="Other University">Other Affiliated University</option>
+                            </select>
+                            <span class="field-error-msg" id="institution-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="academic-year" class="form-label">Program & Current Semester <span class="req">*</span></label>
+                            <input type="text" id="academic-year" name="academic_year" class="form-control" placeholder="e.g. B.Sc. IT - Semester 2" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2: Team Roster -->
+                <div style="margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--color-border);">
+                    <h3 style="margin-bottom: 0.25rem;">02 — YOUR TEAM COMPOSITION</h3>
+                    <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 1.5rem;">Teams must have between 2 to 4 members.</p>
+
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label for="team-name" class="form-label">Official Team Name <span class="req">*</span></label>
+                            <input type="text" id="team-name" name="team_name" class="form-control" placeholder="e.g. ByteBazaar or NeuralHimal" required>
+                            <span class="field-error-msg" id="team-name-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="team-size" class="form-label">Number of Members (Including Leader) <span class="req">*</span></label>
+                            <select id="team-size" name="team_size" class="form-control" required>
+                                <option value="2">2 Members</option>
+                                <option value="3" selected>3 Members (Recommended)</option>
+                                <option value="4">4 Members</option>
+                            </select>
+                            <span class="field-error-msg" id="team-size-error"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="teammates-summary" class="form-label">Additional Member Names & Student IDs</label>
+                        <textarea id="teammates-summary" name="teammates_summary" rows="3" class="form-control" placeholder="Member 2: Name (Student ID)&#10;Member 3: Name (Student ID)&#10;Member 4: Name (Student ID)"></textarea>
+                        <span class="form-hint">List your teammates' full names and university IDs.</span>
+                    </div>
+                </div>
+
+                <!-- Section 3: Technical Track & Idea Summary -->
+                <div style="margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--color-border);">
+                    <h3 style="margin-bottom: 0.25rem;">03 — YOUR TRACK & TECHNICAL PROFILE</h3>
+                    <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 1.5rem;">Tell us what challenge space you aim to conquer.</p>
+
+                    <div class="form-group">
+                        <label for="hack-track" class="form-label">Primary Challenge Track <span class="req">*</span></label>
+                        <select id="hack-track" name="hack_track" class="form-control" required>
+                            <option value="">-- Choose Competition Track --</option>
+                            <option value="AI & Localized Intelligence">Track 01: AI & Localized Intelligence</option>
+                            <option value="Climate & Urban Resilience">Track 02: Climate & Urban Resilience</option>
+                            <option value="FinTech & Digital Inclusion">Track 03: FinTech & Digital Inclusion</option>
+                            <option value="Smart Campus & Student Life">Track 04: Smart Campus & Student Life</option>
+                            <option value="Open Frontier Innovation">Track 05: Open Frontier Innovation</option>
+                        </select>
+                        <span class="field-error-msg" id="hack-track-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-proposal" class="form-label">Project Summary & Problem Statement <span class="req">*</span></label>
+                        <textarea id="project-proposal" name="project_proposal" rows="4" class="form-control" data-max-chars="500" placeholder="Briefly describe what problem your team wants to solve, your technical approach, and expected impact..." required></textarea>
+                        <span id="project-proposal-counter" class="char-counter">0 / 500 characters</span>
+                        <span class="field-error-msg" id="project-proposal-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Primary Technical Competencies</label>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem; margin-top: 0.5rem;">
+                            <label class="checkbox-label"><input type="checkbox" name="skill[]" value="Frontend"> Frontend (HTML/CSS/JS)</label>
+                            <label class="checkbox-label"><input type="checkbox" name="skill[]" value="Backend"> Backend APIs / Databases</label>
+                            <label class="checkbox-label"><input type="checkbox" name="skill[]" value="AI/ML"> Machine Learning / AI</label>
+                            <label class="checkbox-label"><input type="checkbox" name="skill[]" value="Embedded/IoT"> IoT & Hardware Circuits</label>
+                            <label class="checkbox-label"><input type="checkbox" name="skill[]" value="UI/UX"> UI/UX Design & Prototyping</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 04 — YOUR EXPERIENCE & SKILLS -->
+                <div style="margin-bottom: 2rem;">
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="terms-agreement" name="terms_agreement" required>
+                            <span>I certify that all team members are active undergraduate students. We agree to abide by the APUHACKERX2026 Code of Conduct and will author original code during the official 48-hour event window. <span class="req">*</span></span>
+                        </label>
+                        <span class="field-error-msg" id="terms-agreement-error"></span>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                    <button type="submit" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1rem;">
+                        <span>Submit Registration</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
+                    <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-secondary);">
+                        ⚡ Registration open till Nov 20 · 48H Hackathon begins Nov 30, 2026
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    
+    <!-- Global Footer -->
+    <footer class="site-footer">
+        <div class="footer-top-strip">
+            <div class="container footer-strip-inner">
+                <div class="strip-item">
+                    <span class="strip-label">ORGANIZED BY:</span>
+                    <span class="strip-val">Lord Buddha Education Foundation (LBEF) & Asia Pacific University (APU)</span>
+                </div>
+                <div class="strip-item">
+                    <span class="strip-label">VENUE:</span>
+                    <span class="strip-val">LBEF Campus, Maitidevi Marg, Kathmandu 44600, Nepal</span>
+                </div>
+                <div class="strip-item">
+                    <span class="strip-label">REGISTRATION DEADLINE:</span>
+                    <span class="strip-val">November 20, 2026 (23:59 NPT)</span>
+                </div>
+                <div class="strip-item">
+                    <span class="strip-label">HACKATHON DATES:</span>
+                    <span class="strip-val">November 30 – December 2, 2026 // 48 Hours On-Campus</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-main-content">
+            <div class="footer-grid">
+                <div class="footer-col col-brand">
+                    <div class="footer-logo">
+                        <span class="footer-logo-title">APUHACKER<span class="title-x">X</span>2026</span>
+                        <span class="footer-tagline">BUILD. BREAK. REPEAT.</span>
+                        <span class="footer-sub-tagline">48 HOURS OF IDEAS, CODE &amp; REAL-WORLD PROBLEMS.</span>
+                    </div>
+                    <p class="footer-desc">
+                        A collaborative student innovation sprint uniting bright minds from Kathmandu to Kuala Lumpur. Exploring AI, urban sustainability, decentralized systems, and inclusive healthtech for emerging markets.
+                    </p>
+                    <div class="footer-badges">
+                        <span class="badge">APU MALAYSIA</span>
+                        <span class="badge">LBEF KATHMANDU</span>
+                        <span class="badge">STUDENT INITIATIVE</span>
+                    </div>
+                </div>
+
+                <div class="footer-col col-links">
+                    <h4 class="footer-heading">NAVIGATION</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About & Committee</a></li>
+                        <li><a href="activities.html">Tracks & Rules</a></li>
+                        <li><a href="schedule.html">48H Timetable</a></li>
+                        <li><a href="registration.html">Team Registration</a></li>
+                        <li><a href="dashboard.html">Participant Dashboard</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col col-links">
+                    <h4 class="footer-heading">ESSENTIALS</h4>
+                    <ul class="footer-links">
+                        <li><a href="resources.html">Starter Kits & Guides</a></li>
+                        <li><a href="gallery.html">Event Gallery & Video</a></li>
+                        <li><a href="news.html">News & Announcements</a></li>
+                        <li><a href="faq.html">Frequently Asked Questions</a></li>
+                        <li><a href="sponsors.html">Sponsors & Partners</a></li>
+                        <li><a href="contact.html">Venue & Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col col-contact">
+                    <h4 class="footer-heading">COMMUNICATION</h4>
+                    <p class="footer-info-text">Have inquiries about teams, mentorship, or campus access?</p>
+                    <div class="contact-pill-list">
+                        <a href="mailto:apuhackerx2026@lbef.edu.np" class="contact-pill">
+                            <span class="pill-type">EMAIL</span>
+                            <span class="pill-val">apuhackerx2026@lbef.edu.np</span>
+                        </a>
+                        <a href="tel:+97714444435" class="contact-pill">
+                            <span class="pill-type">HELPLINE</span>
+                            <span class="pill-val">+977 1-4444435 / Ext 204</span>
+                        </a>
+                    </div>
+                    <div class="social-links-row">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">GH</a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">IN</a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">IG</a>
+                        <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Discord">DC</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>© 2026 APUHACKERX2026 Student Organizing Committee. All rights reserved.</p>
+                    <p class="academic-disclaimer">
+                        <strong>Academic Project Notice:</strong> This website is an authentic student-built project created strictly for the university module <strong>CT053-3-1 Fundamentals of Web Design and Development (FDD) Group Assignment</strong>.
+                    </p>
+                </div>
+                <div class="footer-bottom-right">
+                    <a href="resources.html#conduct">Code of Conduct</a>
+                    <span class="dot-sep">·</span>
+                    <a href="faq.html">Student Eligibility</a>
+                    <span class="dot-sep">·</span>
+                    <a href="#top" class="back-to-top-text" id="back-to-top-link">Back to Top ↑</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Back to Top Button -->
+    <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Scroll back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+
+    <!-- Shared Core Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/forms.js"></script>
+</body>
+</html>

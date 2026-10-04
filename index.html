@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home | APUHACKERX2026 // APU × LBEF STUDENT HACKATHON</title>
+    <meta name="description" content="APUHACKERX2026 is the premier student hackathon co-organized by LBEF Campus and Asia Pacific University (APU) in Kathmandu, Nepal.">
+    <meta name="author" content="LBEF & APU Student Organizing Committee">
+    <meta name="keywords" content="Hackathon Nepal, LBEF Campus, Asia Pacific University, Kathmandu Tech, Student Innovation, Coding Competition">
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:title" content="Home | APUHACKERX2026">
+    <meta property="og:description" content="APUHACKERX2026 is the premier student hackathon co-organized by LBEF Campus and Asia Pacific University (APU) in Kathmandu, Nepal.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+        <!-- Google Fonts: Sora (Headings) + Inter (Body) + IBM Plex Mono (Technical Labels) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Site CSS Layers -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- EmailJS SDK (for client-side form submissions) -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        // EmailJS Initialization Boilerplate
+        // Replace with your real public key in production:
+        // window.EMAILJS_PUBLIC_KEY = "YOUR_EMAILJS_PUBLIC_KEY";
+        // emailjs.init(window.EMAILJS_PUBLIC_KEY);
+    </script>
+</head>
+<body id="top" data-page="index">
+    
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
+
+    <!-- Top Announcement Ticker -->
+    <aside class="announcement-bar" aria-label="Event Notice">
+        <div class="announcement-ticker">
+            <span class="ticker-tag">LIVE REGISTRATION</span>
+            <span class="ticker-text">APUHACKERX2026 // Registration open till Nov 20 · 48H Hackathon begins Nov 30 at LBEF Campus, Maitidevi, Kathmandu · APU × LBEF Student Collaboration · Over NPR 350,000 in Prizes & Cloud Credits!</span>
+        </div>
+        <div class="announcement-meta">
+            <span class="status-indicator"><span class="status-beacon"></span> REGISTRATIONS ACTIVE</span>
+            <span class="event-coords">27.7058° N, 85.3331° E · KATHMANDU</span>
+        </div>
+    </aside>
+
+    <!-- Global Header & Navigation -->
+    <header class="site-header" id="site-header">
+        <div class="header-container">
+            <a href="index.html" class="brand-logo" aria-label="APUHACKERX2026 Home">
+                <span class="logo-mark">APUHACKER<span class="logo-x">X</span><span class="logo-year">2026</span></span>
+                <span class="logo-sub">APU × LBEF STUDENT HACKATHON</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" aria-current="page" class="nav-link active">Home</a></li>
+<li><a href="about.html" class="nav-link">About</a></li>
+<li><a href="activities.html" class="nav-link">Tracks & Rules</a></li>
+<li><a href="schedule.html" class="nav-link">Schedule</a></li>
+<li><a href="resources.html" class="nav-link">Resources</a></li>
+<li><a href="gallery.html" class="nav-link">Gallery</a></li>
+<li><a href="news.html" class="nav-link">News</a></li>
+<li><a href="faq.html" class="nav-link">FAQ</a></li>
+<li><a href="sponsors.html" class="nav-link">Sponsors</a></li>
+<li><a href="contact.html" class="nav-link">Contact</a></li>
+<li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="registration.html" class="btn btn-primary btn-sm register-btn">
+                    <span>Register Team →</span>
+                </a>
+                
+                <!-- Mobile Navigation Toggle -->
+                <button type="button" class="mobile-nav-toggle" id="menu-toggle-btn" aria-controls="mobile-drawer" aria-expanded="false" aria-label="Toggle navigation menu">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+            <div class="mobile-drawer-inner">
+                <div class="mobile-drawer-header">
+                    <span class="drawer-title">APUHACKER<span style="color:var(--color-secondary);">X</span>2026</span>
+                    <button type="button" class="drawer-close" id="menu-close-btn" aria-label="Close navigation menu">✕</button>
+                </div>
+                <nav class="mobile-nav" aria-label="Mobile Navigation">
+                    <ul class="mobile-nav-list">
+                        <li><a href="index.html" aria-current="page" class="nav-link active">Home</a></li>
+<li><a href="about.html" class="nav-link">About</a></li>
+<li><a href="activities.html" class="nav-link">Tracks & Rules</a></li>
+<li><a href="schedule.html" class="nav-link">Schedule</a></li>
+<li><a href="resources.html" class="nav-link">Resources</a></li>
+<li><a href="gallery.html" class="nav-link">Gallery</a></li>
+<li><a href="news.html" class="nav-link">News</a></li>
+<li><a href="faq.html" class="nav-link">FAQ</a></li>
+<li><a href="sponsors.html" class="nav-link">Sponsors</a></li>
+<li><a href="contact.html" class="nav-link">Contact</a></li>
+<li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+
+                    </ul>
+                </nav>
+                <div class="mobile-drawer-footer">
+                    <a href="registration.html" class="btn btn-primary btn-block">Register Team Now →</a>
+                    <p class="drawer-location">LBEF Campus, Maitidevi, Kathmandu, Nepal</p>
+                </div>
+            </div>
+        </div>
+        <div class="drawer-backdrop" id="drawer-backdrop"></div>
+    </header>
+
+
+    <main id="main-content" class="main-wrapper">
+        
+<!-- HERO SECTION -->
+<section class="hero-editorial">
+    <div class="container">
+        <div class="hero-grid">
+            <div class="hero-copy-block">
+                <div class="hero-tag-strip">
+                    <span class="badge badge-primary">NOV 30 – DEC 02, 2026</span>
+                    <span class="badge badge-secondary">48-HOUR SPRINT</span>
+                    <span class="badge badge-highlight">REGISTRATION OPEN TILL NOV 20</span>
+                </div>
+
+                <h1 class="hero-title">
+                    APUHACKER<span class="title-x">X</span><span class="title-accent">2026</span>
+                </h1>
+
+                <span class="hero-tagline">
+                    BUILD. BREAK. REPEAT.
+                </span>
+                <span class="hero-sub-tagline">
+                    48 HOURS OF IDEAS, CODE &amp; REAL-WORLD PROBLEMS.
+                </span>
+
+                <p class="hero-lead">
+                    The premier student innovation hackathon co-hosted by <strong>Lord Buddha Education Foundation (LBEF)</strong> and <strong>Asia Pacific University (APU)</strong>. Over 200 developers, designers, and hardware makers building real solutions for emerging Himalayan & Southeast Asian challenges.
+                </p>
+
+                <!-- Live Event Countdown -->
+                <div class="countdown-box" aria-label="Countdown to Event Opening">
+                    <div class="countdown-header">
+                        <span>HACKATHON LAUNCH COUNTDOWN</span>
+                        <span>[UTC+05:45 NPT]</span>
+                    </div>
+                    <div class="countdown-grid" id="countdown">
+                        <div class="countdown-segment">
+                            <span class="countdown-val" id="days">00</span>
+                            <span class="countdown-lbl">Days</span>
+                        </div>
+                        <div class="countdown-segment">
+                            <span class="countdown-val" id="hours">00</span>
+                            <span class="countdown-lbl">Hours</span>
+                        </div>
+                        <div class="countdown-segment">
+                            <span class="countdown-val" id="minutes">00</span>
+                            <span class="countdown-lbl">Minutes</span>
+                        </div>
+                        <div class="countdown-segment">
+                            <span class="countdown-val" id="seconds">00</span>
+                            <span class="countdown-lbl">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero CTAs -->
+                <div class="hero-ctas">
+                    <a href="registration.html" class="btn btn-primary">
+                        <span>Register Your Team</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="activities.html" class="btn btn-secondary">Explore Tracks & Rules</a>
+                    <a href="dashboard.html" class="btn btn-white">View Demo Dashboard</a>
+                </div>
+            </div>
+
+            <!-- Hero Visual Composition (Real Authentic Hackathon Photography) -->
+            <div class="hero-visual-frame">
+                <div class="hero-image-wrap tilt-card">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80" 
+                         alt="Students collaborating passionately on laptops in an engineering laboratory during hackathon sprint" 
+                         width="800" height="600" loading="eager">
+                    <div class="hero-image-caption">
+                        <span>LBEF TURING TECH LAB // KATHMANDU</span>
+                        <span>APU × LBEF COHORT</span>
+                    </div>
+                </div>
+                <div class="hero-floating-stat">
+                    <div class="stat-num">NPR 350K+</div>
+                    <div class="stat-text">Prizes, Grants & Cloud Credits</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HORIZONTAL VALUE STRIP (NON-CARD EDITORIAL) -->
+<section class="section-strip" aria-label="Core Hackathon Experience">
+    <div class="experience-strip">
+        <div class="exp-block">
+            <span class="exp-num">01 // SPEED</span>
+            <h3 class="exp-title">48H Sprint</h3>
+            <p class="exp-desc">From initial ideation on Friday evening to production deployment on Sunday noon. High-velocity engineering without sleep-depriving fluff.</p>
+        </div>
+        <div class="exp-block">
+            <span class="exp-num">02 // COLLAB</span>
+            <h3 class="exp-title">APU × LBEF</h3>
+            <p class="exp-desc">Cross-pollinate skills with university peers from Kathmandu and Malaysia. Mixed teams bring together software, hardware, and design.</p>
+        </div>
+        <div class="exp-block">
+            <span class="exp-num">03 // REAL-WORLD</span>
+            <h3 class="exp-title">5 Key Tracks</h3>
+            <p class="exp-desc">Tackle genuine local challenges: clean energy telemetry, decentralized fintech, public health access, and Nepali NLP models.</p>
+        </div>
+        <div class="exp-block">
+            <span class="exp-num">04 // MENTORSHIP</span>
+            <h3 class="exp-title">Industry Jury</h3>
+            <p class="exp-desc">Receive real-time 1-on-1 code reviews and pitch practice from senior architects at F1Soft, Leapfrog, and APU Research Centers.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION: EVENT INTRODUCTION NARRATIVE -->
+<section class="section section-white reveal-on-scroll">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-meta-tag">ORIGIN & PURPOSE</span>
+            <h2 class="section-title">An Academic Collision of Talent & Purpose</h2>
+            <p class="section-subtitle">
+                APUHACKERX2026 is not a corporate showcase or an artificial networking summit. It is an intensive, student-led technical marathon designed to bridge academic theory with real engineering grit.
+            </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; align-items: center;">
+            <div>
+                <p>
+                    Established through the collaborative partnership between <strong>Lord Buddha Education Foundation (LBEF)</strong> in Kathmandu and <strong>Asia Pacific University of Technology & Innovation (APU)</strong> in Malaysia, APUHACKERX2026 challenges undergraduate innovators to solve problems facing high-density cities and mountainous ecosystems.
+                </p>
+                <p>
+                    Participants are equipped with high-speed campus networks, 24-hour cafeteria meals, dedicated hardware tinkering benches, and on-site guidance from academic and industry practitioners.
+                </p>
+                <div style="margin-top: 1.5rem;">
+                    <a href="about.html" class="btn btn-secondary">Read the Full Collaboration Story →</a>
+                </div>
+            </div>
+            <div>
+                <div style="border: 1px solid var(--color-border-dark); box-shadow: var(--shadow-brutal); overflow: hidden; background: #000;">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80" 
+                         alt="Team of student developers discussing system architecture on paper and laptop" 
+                         width="600" height="400" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION: HACKATHON TRACKS PREVIEW -->
+<section class="section section-alt reveal-on-scroll">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-meta-tag">TECHNICAL SCOPE</span>
+            <h2 class="section-title">Five Tracks Designed for Real Impact</h2>
+            <p class="section-subtitle">
+                Select your focus area upon registration. Projects are evaluated on technical execution, real feasibility, user experience, and originality.
+            </p>
+        </div>
+
+        <div class="tracks-editorial-list">
+            <div class="track-row">
+                <span class="track-index">TR-01</span>
+                <div class="track-name-box">
+                    <h3>AI & Localized Intelligence</h3>
+                    <span class="track-focus">NLP · Computer Vision · Edge AI</span>
+                </div>
+                <p class="track-summary">
+                    Build lightweight machine learning tools optimized for low-bandwidth environments, Nepali dialect translation, or localized agricultural diagnostics.
+                </p>
+                <div class="track-meta-chips">
+                    <span class="badge badge-primary">High Demand</span>
+                    <a href="activities.html#track-1" class="btn btn-sm btn-secondary">Explore Track</a>
+                </div>
+            </div>
+
+            <div class="track-row">
+                <span class="track-index">TR-02</span>
+                <div class="track-name-box">
+                    <h3>Climate & Urban Resilience</h3>
+                    <span class="track-focus">IoT · Remote Sensing · Green Tech</span>
+                </div>
+                <p class="track-summary">
+                    Deploy sensor telemetry for flood warning, valley air quality monitoring, micro-hydropower tracking, and municipal waste reduction.
+                </p>
+                <div class="track-meta-chips">
+                    <span class="badge">Hardware Supported</span>
+                    <a href="activities.html#track-2" class="btn btn-sm btn-secondary">Explore Track</a>
+                </div>
+            </div>
+
+            <div class="track-row">
+                <span class="track-index">TR-03</span>
+                <div class="track-name-box">
+                    <h3>FinTech & Digital Inclusion</h3>
+                    <span class="track-focus">Open Banking · Micro-transactions · Security</span>
+                </div>
+                <p class="track-summary">
+                    Create accessible digital wallet workflows, offline payment validations for rural commerce, and secure verifiable student credentials.
+                </p>
+                <div class="track-meta-chips">
+                    <span class="badge">API Access</span>
+                    <a href="activities.html#track-3" class="btn btn-sm btn-secondary">Explore Track</a>
+                </div>
+            </div>
+
+            <div class="track-row">
+                <span class="track-index">TR-04</span>
+                <div class="track-name-box">
+                    <h3>Smart Campus & Student Life</h3>
+                    <span class="track-focus">Full-Stack · Cross-Platform · PWA</span>
+                </div>
+                <p class="track-summary">
+                    Revolutionize everyday campus living: timetable conflict resolvers, automated lab equipment reservation, and peer-to-peer textbook barter networks.
+                </p>
+                <div class="track-meta-chips">
+                    <span class="badge">Campus Sandbox</span>
+                    <a href="activities.html#track-4" class="btn btn-sm btn-secondary">Explore Track</a>
+                </div>
+            </div>
+
+            <div class="track-row">
+                <span class="track-index">TR-05</span>
+                <div class="track-name-box">
+                    <h3>Open Frontier Innovation</h3>
+                    <span class="track-focus">Wildcard · Emerging Tech · Accessibility</span>
+                </div>
+                <p class="track-summary">
+                    Have an audacious prototype that doesn't fit standard categories? VR educational modules, assistive haptics for visual impairment, or mesh networks.
+                </p>
+                <div class="track-meta-chips">
+                    <span class="badge">Wildcard</span>
+                    <a href="activities.html#track-5" class="btn btn-sm btn-secondary">Explore Track</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION: FEATURED MULTIMEDIA (VIDEO & CAMPUS ATMOSPHERE) -->
+<section class="section section-white reveal-on-scroll">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-meta-tag">CAMPUS APUHACKERX2026</span>
+            <h2 class="section-title">The Energy of 48 Hours in Motion</h2>
+            <p class="section-subtitle">
+                Watch past student sprint highlights and glimpse what awaits your team at the LBEF Maitidevi campus this November.
+            </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1.35fr 1fr; gap: 2rem; align-items: stretch;">
+            <!-- Embedded Responsive Video -->
+            <div style="border: 1px solid var(--color-border-dark); box-shadow: var(--shadow-brutal); background: #000; display: flex; flex-direction: column;">
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                    <iframe src="https://www.youtube-nocookie.com/embed/n4p_d5X_xQY" 
+                            title="Hackathon Highlights Video Showcase" 
+                            style="position: absolute; top:0; left: 0; width: 100%; height: 100%; border: 0;" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div style="padding: 1rem 1.25rem; background: var(--color-surface); border-top: 1px solid var(--color-border); font-family: var(--font-mono); font-size: 0.8125rem; display: flex; justify-content: space-between;">
+                    <span>FEATURED VIDEO // 2025 SPRINT RECAP</span>
+                    <span>HD 1080P</span>
+                </div>
+            </div>
+
+            <!-- Side Photo Strip -->
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+                <div style="border: 1px solid var(--color-border-dark); box-shadow: var(--shadow-sm); overflow: hidden; height: 190px;">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80" 
+                         alt="Mentor answering questions during midnight debugging sprint" 
+                         style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                </div>
+                <div style="border: 1px solid var(--color-border-dark); box-shadow: var(--shadow-sm); overflow: hidden; height: 190px;">
+                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80" 
+                         alt="Team testing embedded electronics and soldering circuits" 
+                         style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                </div>
+                <a href="gallery.html" class="btn btn-secondary" style="margin-top: 0.5rem; text-align: center;">View Complete Photo & Media Gallery →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION: SCHEDULE MILESTONE PREVIEW -->
+<section class="section section-alt reveal-on-scroll">
+    <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2.5rem; flex-wrap: wrap; gap: 1rem;">
+            <div>
+                <span class="section-meta-tag">TIMETABLE BRIEF</span>
+                <h2 class="section-title">Crucial Milestones</h2>
+            </div>
+            <a href="schedule.html" class="btn btn-secondary">Full 48-Hour Timetable →</a>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
+            <div class="card tilt-card" style="border: 1px solid var(--color-border-dark); background: var(--color-surface); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+                <span style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--color-secondary); font-weight: 700;">DAY 1 // MON NOV 30 · 17:00</span>
+                <h4 style="margin: 0.5rem 0 0.25rem;">Hacking Commences</h4>
+                <p style="font-size: 0.875rem; color: var(--color-text-muted);">Opening keynote, problem statement release, and git repository initialization.</p>
+            </div>
+            <div class="card tilt-card" style="border: 1px solid var(--color-border-dark); background: var(--color-surface); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+                <span style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--color-secondary); font-weight: 700;">DAY 2 // TUE DEC 01 · 11:00</span>
+                <h4 style="margin: 0.5rem 0 0.25rem;">Mentor Clinic I</h4>
+                <p style="font-size: 0.875rem; color: var(--color-text-muted);">Architectural audits with APU software engineers and local industry tech leads.</p>
+            </div>
+            <div class="card tilt-card" style="border: 1px solid var(--color-border-dark); background: var(--color-surface); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+                <span style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--color-secondary); font-weight: 700;">DAY 2 // TUE DEC 01 · 23:59</span>
+                <h4 style="margin: 0.5rem 0 0.25rem;">Midnight Fuel & Checkpoint</h4>
+                <p style="font-size: 0.875rem; color: var(--color-text-muted);">Chai and momos served. Mid-sprint sanity check and API stress tests.</p>
+            </div>
+            <div class="card tilt-card" style="border: 1px solid var(--color-border-dark); background: var(--color-surface); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+                <span style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--color-secondary); font-weight: 700;">DAY 3 // WED DEC 02 · 12:00</span>
+                <h4 style="margin: 0.5rem 0 0.25rem;">Hard Code Freeze & Pitches</h4>
+                <p style="font-size: 0.875rem; color: var(--color-text-muted);">Repositories locked. 3-minute stage demonstrations to the grand judging panel.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION: FINAL CTA BANNER -->
+<section class="section section-dark reveal-on-scroll" style="text-align: center;">
+    <div class="container container-narrow">
+        <span class="badge badge-primary" style="margin-bottom: 1.5rem;">SLOTS STRICTLY LIMITED TO 50 TEAMS</span>
+        <h2 style="font-size: clamp(2rem, 4.5vw, 3.5rem); margin-bottom: 1.25rem; line-height: 1.1;">
+            Ready to Build Something That Matters?
+        </h2>
+        <p style="color: #CFCBC0; font-size: 1.125rem; margin-bottom: 2rem; max-width: 620px; margin-left: auto; margin-right: auto;">
+            Applications are reviewed on a rolling basis. Free participation for all enrolled LBEF and APU students. Food, merchandise, high-speed WiFi, and overnight venue access provided.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <a href="registration.html" class="btn btn-primary" style="padding: 1rem 2.25rem; font-size: 1rem;">
+                Submit Team Application →
+            </a>
+            <a href="faq.html" class="btn btn-outline-white" style="padding: 1rem 2rem;">
+                Read Participant FAQ
+            </a>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    
+    <!-- Global Footer -->
+    <footer class="site-footer">
+        <div class="footer-top-strip">
+            <div class="container footer-strip-inner">
+                <div class="strip-item">
+                    <span class="strip-label">ORGANIZED BY:</span>
+                    <span class="strip-val">Lord Buddha Education Foundation (LBEF) & Asia Pacific University (APU)</span>
+                </div>
+                <div class="strip-item">
+                    <span class="strip-label">VENUE:</span>
+                    <span class="strip-val">LBEF Campus, Maitidevi Marg, Kathmandu 44600, Nepal</span>
+                </div>
+                <div class="strip-item">
+                    <span class="strip-label">REGISTRATION DEADLINE:</span>
+                    <span class="strip-val">November 20, 2026 (23:59 NPT)</span>
+                </div>
+                <div class="strip-item">
+                    <span class="strip-label">HACKATHON DATES:</span>
+                    <span class="strip-val">November 30 – December 2, 2026 // 48 Hours On-Campus</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-main-content">
+            <div class="footer-grid">
+                <div class="footer-col col-brand">
+                    <div class="footer-logo">
+                        <span class="footer-logo-title">APUHACKER<span class="title-x">X</span>2026</span>
+                        <span class="footer-tagline">BUILD. BREAK. REPEAT.</span>
+                        <span class="footer-sub-tagline">48 HOURS OF IDEAS, CODE &amp; REAL-WORLD PROBLEMS.</span>
+                    </div>
+                    <p class="footer-desc">
+                        A collaborative student innovation sprint uniting bright minds from Kathmandu to Kuala Lumpur. Exploring AI, urban sustainability, decentralized systems, and inclusive healthtech for emerging markets.
+                    </p>
+                    <div class="footer-badges">
+                        <span class="badge">APU MALAYSIA</span>
+                        <span class="badge">LBEF KATHMANDU</span>
+                        <span class="badge">STUDENT INITIATIVE</span>
+                    </div>
+                </div>
+
+                <div class="footer-col col-links">
+                    <h4 class="footer-heading">NAVIGATION</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About & Committee</a></li>
+                        <li><a href="activities.html">Tracks & Rules</a></li>
+                        <li><a href="schedule.html">48H Timetable</a></li>
+                        <li><a href="registration.html">Team Registration</a></li>
+                        <li><a href="dashboard.html">Participant Dashboard</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col col-links">
+                    <h4 class="footer-heading">ESSENTIALS</h4>
+                    <ul class="footer-links">
+                        <li><a href="resources.html">Starter Kits & Guides</a></li>
+                        <li><a href="gallery.html">Event Gallery & Video</a></li>
+                        <li><a href="news.html">News & Announcements</a></li>
+                        <li><a href="faq.html">Frequently Asked Questions</a></li>
+                        <li><a href="sponsors.html">Sponsors & Partners</a></li>
+                        <li><a href="contact.html">Venue & Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col col-contact">
+                    <h4 class="footer-heading">COMMUNICATION</h4>
+                    <p class="footer-info-text">Have inquiries about teams, mentorship, or campus access?</p>
+                    <div class="contact-pill-list">
+                        <a href="mailto:apuhackerx2026@lbef.edu.np" class="contact-pill">
+                            <span class="pill-type">EMAIL</span>
+                            <span class="pill-val">apuhackerx2026@lbef.edu.np</span>
+                        </a>
+                        <a href="tel:+97714444435" class="contact-pill">
+                            <span class="pill-type">HELPLINE</span>
+                            <span class="pill-val">+977 1-4444435 / Ext 204</span>
+                        </a>
+                    </div>
+                    <div class="social-links-row">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">GH</a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">IN</a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">IG</a>
+                        <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Discord">DC</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>© 2026 APUHACKERX2026 Student Organizing Committee. All rights reserved.</p>
+                    <p class="academic-disclaimer">
+                        <strong>Academic Project Notice:</strong> This website is an authentic student-built project created strictly for the university module <strong>CT053-3-1 Fundamentals of Web Design and Development (FDD) Group Assignment</strong>.
+                    </p>
+                </div>
+                <div class="footer-bottom-right">
+                    <a href="resources.html#conduct">Code of Conduct</a>
+                    <span class="dot-sep">·</span>
+                    <a href="faq.html">Student Eligibility</a>
+                    <span class="dot-sep">·</span>
+                    <a href="#top" class="back-to-top-text" id="back-to-top-link">Back to Top ↑</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Back to Top Button -->
+    <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Scroll back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+
+    <!-- Shared Core Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    
+</body>
+</html>

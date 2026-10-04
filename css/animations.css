@@ -1,0 +1,82 @@
+/* ==========================================================================
+   APUHACKERX2026 // APU × LBEF STUDENT HACKATHON
+   Style Sheet: Animations & Interactive Transitions
+   Theme: Restrained, purposeful technical micro-interactions
+   ========================================================================== */
+
+/* -------------------------------------------------------------
+   1. SCROLL REVEAL UTILITIES
+   ------------------------------------------------------------- */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }
+.delay-400 { transition-delay: 0.4s; }
+
+/* -------------------------------------------------------------
+   2. KEYFRAME ANIMATIONS
+   ------------------------------------------------------------- */
+@keyframes tickerSlide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes beaconGlow {
+    0% { transform: scale(0.96); opacity: 0.8; }
+    50% { transform: scale(1.04); opacity: 1; }
+    100% { transform: scale(0.96); opacity: 0.8; }
+}
+
+@keyframes subtleFloat {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-4px); }
+    100% { transform: translateY(0px); }
+}
+
+.float-slow {
+    animation: subtleFloat 4s ease-in-out infinite;
+}
+
+/* -------------------------------------------------------------
+   3. INTERACTIVE 3D PERSPECTIVE TILT
+   ------------------------------------------------------------- */
+.tilt-card {
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    transform-style: preserve-3d;
+}
+
+/* -------------------------------------------------------------
+   4. ACCESSIBILITY: REDUCED MOTION PREFERENCE
+   ------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .reveal-on-scroll {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .status-beacon,
+    .float-slow {
+        animation: none !important;
+    }
+}
